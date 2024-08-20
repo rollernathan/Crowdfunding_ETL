@@ -8,7 +8,7 @@ For this Crowdfunding project, we were tasked with building an ETL pipeline usin
 
 The first dataframe and csv file we created was for the categories provided in the data. We did this by first separating the categories from the subcategories in the initial data provided. Once separated, we pulled the unique items from the category column in the dataframe. Using these nine (9) unique categories, we created a dataframe assigning a specific category_id to each unique category. Finally, we exported the resulting csv to our Resources folder to use later. Shown here is an image of the final category dataframe.
 
-![category_df_image.png]()
+![category_df_image.png](https://github.com/rollernathan/Crowdfunding_ETL/blob/main/Images/category_df_image.png)
 
 We then did a similar analysis using the subcategories column we had previously separated. We pulled the unique items from the subcategory column in the dataframe. Using these twenty-four (24) unique subcategories, we created a dataframe assigning a specific subcategory_id to each unique subcategory. Finally, we exported the resulting csv to our Resources folder to use later. Shown here is an image of the final subcategory dataframe.
 
