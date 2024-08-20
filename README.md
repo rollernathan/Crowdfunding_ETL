@@ -12,21 +12,21 @@ The first dataframe and csv file we created was for the categories provided in t
 
 We then did a similar analysis using the subcategories column we had previously separated. We pulled the unique items from the subcategory column in the dataframe. Using these twenty-four (24) unique subcategories, we created a dataframe assigning a specific subcategory_id to each unique subcategory. Finally, we exported the resulting csv to our Resources folder to use later. Shown here is an image of the final subcategory dataframe.
 
-![subcategory_df_image.png]()
+![subcategory_df_image.png](https://github.com/rollernathan/Crowdfunding_ETL/blob/main/Images/subcategory_df_image.png)
 
 
 ## Part 2: Campaign Dataframe
 
 The next dataframe and csv file we created was for all of the campaigns provided in the crowdfunding data. We first renamed a few of the columns to be more descriptive (specifically blurb became description, launched_at became launched_date, and deadline became end_date). Then, we changed the values stored in goal and pledged to be floats, or decimals, and changed the values in launched_date and end_date to be dates rather than a UNIX timestamp so people can understand the dates. Next, we merged the category and subcategory files with the campaign dataframe so the values in the campaign dataframe for category and subcategory were the ids, rather than the actual category and subcategory. Finally, we removed columns which were no longer needed in the final dataframe and exported the resulting csv to our Resources folder to use later. Shown here is an image of a sample from the final campaign dataframe.
 
-![campaign_df_image.png]()
+![campaign_df_image.png](https://github.com/rollernathan/Crowdfunding_ETL/blob/main/Images/campaign_df_image.png)
 
 
 ## Part 3: Contacts Dataframe
 
 The last dataframe and csv file we created was for the contact information for each of the crowdfunding campaigns provided in the data. In order to accomplish this, we needed to split the json information provided. Then we manipulated the dataframe to have the columns be listed in a specific order (contact_id, first_name, last_name, email). Finally, we exported the resulting csv to our Resources folder to use later. Shown here is an image of a sample from the final contacts dataframe, including the first ten (10) of 1000 rows of data.
 
-![contacts_df_image.png]()
+![contacts_df_image.png](https://github.com/rollernathan/Crowdfunding_ETL/blob/main/Images/contacts_df_image.png)
 
 
 ## Part 4: Crowdfunding Database
@@ -34,21 +34,21 @@ The last dataframe and csv file we created was for the contact information for e
 The last part of our project asked for us to utilize SQL to create a crowdfunding database which would include the four tables we created in the previous parts of the project. We first created an Entity-Relationship Diagram (ERD) to show the relationships between the different tables (shown below).
 
 ### Entity-Relationship Diagram
-![crowdfunding_ETL_ERD.png]()
+![crowdfunding_ETL_ERD.png](https://github.com/rollernathan/Crowdfunding_ETL/blob/main/Resources/Crowdfunding_db/crowdfunding_ETL_ERD.png)
 
-Finally, we created the tables and imported the csv files into the tables. Here are the first few rows for each of the tables in the database.
+Finally, we created the tables and imported the csv files into the tables. This needed to be done in a specific order, mainly the campaign table needed to be last due to the foreign keys in the campaign table requiring the keys from each of the other tables already be imported. Here are the first few rows for each of the tables in the database.
 
 ### Contacts
-![contacts_table.png]()
+![contacts_table.png](https://github.com/rollernathan/Crowdfunding_ETL/blob/main/Images/contacts_table.png)
 
 ### Category
-![category_table.png]()
+![category_table.png](https://github.com/rollernathan/Crowdfunding_ETL/blob/main/Images/category_table.png)
 
 ### Subcategory
-![subcategory_table.png]()
+![subcategory_table.png](https://github.com/rollernathan/Crowdfunding_ETL/blob/main/Images/subcategory_table.png)
 
 ### Campaign
-![campaign_table.png]()
+![campaign_table.png](https://github.com/rollernathan/Crowdfunding_ETL/blob/main/Images/campaign_table.png)
 
 
 
