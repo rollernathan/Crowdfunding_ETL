@@ -38,16 +38,16 @@ The last part of our project asked for us to utilize SQL to create a crowdfundin
 
 Finally, we created the tables and imported the csv files into the tables. This needed to be done in a specific order, mainly the campaign table needed to be last due to the foreign keys in the campaign table requiring the keys from each of the other tables already be imported. Here are the first few rows for each of the tables in the database.
 
-### Contacts
+### Contacts Table
 ![contacts_table.png](https://github.com/rollernathan/Crowdfunding_ETL/blob/main/Images/contacts_table.png)
 
-### Category
+### Category Table
 ![category_table.png](https://github.com/rollernathan/Crowdfunding_ETL/blob/main/Images/category_table.png)
 
-### Subcategory
+### Subcategory Table
 ![subcategory_table.png](https://github.com/rollernathan/Crowdfunding_ETL/blob/main/Images/subcategory_table.png)
 
-### Campaign
+### Campaign Table
 ![campaign_table.png](https://github.com/rollernathan/Crowdfunding_ETL/blob/main/Images/campaign_table.png)
 
 
