@@ -1,6 +1,8 @@
 # Crowdfunding_ETL
 Project 2
 
+- Completed in coordination with RBhatia.
+
 For this Crowdfunding project, we were tasked with building an ETL pipeline using Python, Pandas, and either Python dictionary methods or regular expressions to extract and transform the data. After transforming the data, we created four csv files and use the data from the csv files to create an ERD and a table schema. Finally, using the table schema we created, we uploaded the csv file data into a Postgres database.
 
 
